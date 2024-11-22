@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock-Paper-Scissors</title>
+</head>
+<body>
+    <script>
+        function getComputerChoice() {
+            const computerChoice = ['rock', 'paper', 'scissors']; 
+            return computerChoice[Math.floor(Math.random() * 3)];
+        }
+        console.log(getComputerChoice());
+    
+        function getHumanChoice() {
+            let humanChoice = prompt('rock, paper, or scissors?');
+            switch (humanChoice.toLowerCase()) {
+                case 'rock':
+                case 'paper':
+                case 'scissors':
+                return (humanChoice.toLowerCase(humanChoice));
+                break;
+                default:
+                    alert('That is not an option! Please choose rock, paper, or scissors.')
+            }
+        }
+        console.log(getHumanChoice());
+
+        
+        let humanScore = 0;
+        let computerScore = 0;
+
+        function playRound(humanChoice, computerChoice) {
+        
+        }
+
+        // const humanSelection = getHumanChoice();
+        // const computerSelection = getComputerChoice();
+
+        // playRound(humanSelection, computerSelection);
+
+
+    </script>
+</body>
+</html>
+
+
+<!-- PLAN
+
+Step 1 
+DECLARE function getComputerChoice (no argument?)
+RETURN one of the following strings randomly: 'rock', 'paper', 'scissors'
+
+
+Step 2 
+DECLARE function getHumanChoice(humanChoice) (choice is a string)
+PROMPT user to type either rock, paper, or scissors
+    let humanChoice = prompt('rock, paper, or scissors?')
+    return (humanChoice.toLowerCase()); 
+
+IF user types one of the three
+    THEN continue to getHumanChoice() function
+    ELSE return 'That is not an option! Please choose rock, paper, or scissors'
+
+
+Step 5
+
+DECLARE function playRound(humanChoice, computerChoice)
+
+
+const humanSelection = getHumanChoice();
+const computerSelection = getComputerChoice();
+
+playRound(humanSelection, computerSelection);
+
+ -->
