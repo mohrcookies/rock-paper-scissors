@@ -6,42 +6,7 @@
     <title>Rock-Paper-Scissors</title>
 </head>
 <body>
-    <script>
-        function getComputerChoice() {
-            const computerChoice = ['rock', 'paper', 'scissors']; 
-            return computerChoice[Math.floor(Math.random() * 3)];
-        }
-        console.log(getComputerChoice());
-    
-        function getHumanChoice() {
-            let humanChoice = prompt('rock, paper, or scissors?');
-            switch (humanChoice.toLowerCase()) {
-                case 'rock':
-                case 'paper':
-                case 'scissors':
-                return (humanChoice.toLowerCase(humanChoice));
-                break;
-                default:
-                    alert('That is not an option! Please choose rock, paper, or scissors.')
-            }
-        }
-        console.log(getHumanChoice());
-
-        
-        let humanScore = 0;
-        let computerScore = 0;
-
-        function playRound(humanChoice, computerChoice) {
-        
-        }
-
-        // const humanSelection = getHumanChoice();
-        // const computerSelection = getComputerChoice();
-
-        // playRound(humanSelection, computerSelection);
-
-
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
 
@@ -56,22 +21,41 @@ RETURN one of the following strings randomly: 'rock', 'paper', 'scissors'
 Step 2 
 DECLARE function getHumanChoice(humanChoice) (choice is a string)
 PROMPT user to type either rock, paper, or scissors
-    let humanChoice = prompt('rock, paper, or scissors?')
+    let humanChoice = prompt('Rock, Paper, or Scissors?')
     return (humanChoice.toLowerCase()); 
 
 IF user types one of the three
     THEN continue to getHumanChoice() function
-    ELSE return 'That is not an option! Please choose rock, paper, or scissors'
+    ELSE return 'That is not an option! Please choose Rock, Paper, or Scissors'
 
 
 Step 5
 
 DECLARE function playRound(humanChoice, computerChoice)
 
+COMPARE humanChoice to computerChoice
+    if (humanSelection === computerSelection) {
+    console.log('It's a tie!')
+    } else if (humanSelection === 'rock' && computerSelection === 'scissors') {
+    console.log('You win! Rock beats Scissors.')
+     } else if (humanSelection === 'paper' && computerSelection === 'rock') {
+    console.log('You win! Paper beats Rock.')
+     } else if (humanSelection === 'scissors' && computerSelection === 'paper') {
+    console.log('You win! Scissors beats Paper.')
+     } else {
+      console.log('You lose!')
+      }
+
+
+    
+
 
 const humanSelection = getHumanChoice();
 const computerSelection = getComputerChoice();
 
 playRound(humanSelection, computerSelection);
+
+
+Step 6
 
  -->
