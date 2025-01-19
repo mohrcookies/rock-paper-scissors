@@ -59,12 +59,7 @@ function playGame() {
             return computerScore;
         } 
     }
-    //Loop to play 5 rounds
-    for (let i = 0; i < 5; i++) {
-        const humanSelection = getHumanChoice();
-        const computerSelection = getComputerChoice();
-        playRound(humanSelection, computerSelection);
-    }    
+     
     
     //Declare winner
     if (humanScore > computerScore) {
